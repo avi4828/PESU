@@ -1,0 +1,33 @@
+-->singly linked list
+algorith display_linkedlist(head):
+1.if head = null
+    display "empty list"
+    return
+2.current <- head
+3.ehile current not= null 
+
+
+
+-->inster at the beginning of singly linked list
+-->delete first node of singly linked list 
+
+
+
+-->insert node at the end of singlu linked list
+algorith insert_last(head,data):
+    1.set new_node <- create_node(data)
+    2.if new_node not= NULL then
+        if head = NULL then 
+            return new_node
+        end if 
+        set temp <- head
+        while temp.link not= null do
+            set temp <- temp.link
+        end while
+        set temp.link <- new_node
+    end if
+    return head
+
+
+-->delete last node of singly linked list
+    
