@@ -210,7 +210,6 @@ NODE reverse_list(NODE head){
     return new_head;
 }
 
-// ================= MAIN FUNCTION ===================
 int main() {
     NODE head = NULL;
     int choice, data, pos;
