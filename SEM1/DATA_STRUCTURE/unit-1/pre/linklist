@@ -31,3 +31,127 @@ algorith insert_last(head,data):
 
 -->delete last node of singly linked list
     
+
+
+
+
+-->insert into a sorteed singly linked list
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->delete a node at a postion in a singly linked list
+if head = null then
+    print "empty list "
+    return null
+end if 
+if pos = 0 then
+    set temp <- head
+    set head <- Head.link
+    print " delete node temp.data"
+    free the moemory allocated to temp 
+    return head
+end if
+
+
+
+
+
+
+if curr.link = null then
+    print "out of range"
+    return head
+end if
+set temp <- curr.link
+set curr.link <- temp.link
+print "deleted node "
+free the moemory allocated to temp
+return head
+end algorith;
+
+
+==>algorith search_and_return_previous(head,data)
+    if head = null or head.data = key them
+        return NULL
+    end if 
+    set curr <- head
+    while curr.link != null and curr.link.data != key do
+        set curr<- curr.link
+    end while
+    if curr.link = null then
+        return null
+    else
+        return curr
+    end if
+end algorith
+
+
+==>delete node by content singly linked list
+algorith detelte_by_content(head,key) 
+    if head = null then
+        print"entpty list cannot delete"
+        return null
+    end if
+    if head.data = key then
+        set temp <- head
+        set head <- head.link
+        print "delete node them.data"
+        free the moemory
+        return head
+    end if
+    set prev <- search_and_return_previous(head,key)
+    if prev = null or prev.link = null then
+        print "node with key not found"
+        return head
+    end if 
+    set temp <- prev.link
+    set prev.link <- temp.link
+    print "delete node"
+    free the moemory
+    return head
+end algorith
+
+=>revers a list
+=>sort list
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
