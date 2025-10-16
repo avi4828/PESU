@@ -44,6 +44,8 @@ NODE ins_last(NODE head, int data) {
     return head;
 }
 
+
+
 int main() {
     NODE head = NULL;
     int data;
