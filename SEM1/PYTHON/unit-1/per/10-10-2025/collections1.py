@@ -4,6 +4,9 @@ from collections import OrderedDict as od
 from collections import UserDict as ud
 from collections import deque
 from collections import ChainMap as cm
+from collections import namedtuple
+from collections import UserList
+from collections import UserString
 
 # l=[1,2,3,4,5,6,7,8,9,10]
 # s={1,2,3,4,5,6,7,8,9,10}
@@ -17,6 +20,10 @@ from collections import ChainMap as cm
 # print(c(t),'\n')
 # print(c(d),'\n')
 # print(c(s1),'\n')
+
+# for c,f in counter_a.items():
+#     if f > 2 :
+#         print(f'{c},{f}')
 
 # --------------------------------------------------------------------
 #default dictionary
@@ -118,15 +125,15 @@ o=od([('a',1),('b',2),('c',3),('d',4)])
 #chainmap
 #that was connect all in one
 #chain map are immutable
-d1 = {'a':1,'b':2,}
-d2 = {'c':3,'d':4}
-d3 = {'e':5,'f':6}
-c=cm(d1,d2,d3)
+# d1 = {'a':1,'b':2,}
+# d2 = {'c':3,'d':4}
+# d3 = {'e':5,'f':6}
+# c=cm(d1,d2,d3)
 # print(c)
 
 #add a dictonary (chain) ate the front
-n_c=c.new_child({'a':7,'b':8})
-print(n_c)
+# n_c=c.new_child({'a':7,'b':8})
+# print(n_c)
 # print(n_c['a'])
 
 
@@ -147,7 +154,65 @@ print(n_c)
 #     print(v)
 
 
+#--------------------------------------------------------------------------------------------------
+#Named Tuple
+#this is a use of named to create a tuple 
+# person = namedtuple('person',['name','age'])
+# p1=person(name='avi',age=20)
+# p2=person('albus',11)
+# print(type(person))
+# print(p1.name)
 
+# named tuple is also immutable
+# you can change a values but id goes changed that to make a new copy
+# print(id(p1))
+# p1=p1._replace(name='asdf')
+# print(id(p1))
+
+
+#-----------------------------------------------------------------------------------+
+#user list
+#create a custom list of the type UserList
+#create UserList was give a addinal to create a new type of logic
+# class CustomList(UserList):
+#     def add_twice(self,value):
+#         self.data.append(value)
+#         self.data.append(value)
+#     def pop_twice(self,pos):
+#         self.data.pop(pos)
+#         self.data.pop(pos)
+
+#create an instance of custom list
+# cl=CustomList([1,2,3,4])
+# print(cl,type(cl))
+# cl.append(5)
+# print(cl)
+# cl.add_twice(6)
+# print(cl)
+# # cl.pop(3)
+# # print(cl)
+# cl.pop_twice(4)
+# print(cl)
+
+
+
+# ----------------------------------------------------------------
+# User String
+# in string and property was same but we can create a new addictional logic
+# class CustomString(UserString):
+#     def add_excl(self):
+#         return (f'{self.data}!!!')
+    
+#create an instrace of CustomString
 #
+
+# cs=CustomString('Hello gays')
+# print(cs,type(cs))
+# cs=cs.add_excl()
+# print(cs)
+
+
+
+
 
 
