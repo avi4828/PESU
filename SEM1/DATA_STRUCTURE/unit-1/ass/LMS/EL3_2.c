@@ -7,7 +7,6 @@ typedef struct Node {
     struct Node *link;
 } *NODE;
 
-// Create a new node
 NODE create_node(int cf, int dg) {
     NODE temp = (NODE)malloc(sizeof(struct Node));
     if (temp == NULL) {
@@ -50,7 +49,6 @@ void display(NODE head) {
     printf("\n");
 }
 
-// Add two polynomials
 NODE add_polynomials(NODE p1, NODE p2) {
     NODE result = NULL;
 
@@ -84,7 +82,6 @@ NODE add_polynomials(NODE p1, NODE p2) {
     return result;
 }
 
-// MAIN FUNCTION
 int main() {
     NODE p1 = NULL,p2 = NULL,sum = NULL;
     int n, cf, dg;
