@@ -1,4 +1,5 @@
 # ====syntax====
+print('\n\n')
 # lambda argument:expression
 
 # THIS fuction was only single line function
@@ -75,3 +76,34 @@
 # from functools import reduce
 # product = reduce(lambda a,b:a*b,list(filter(lambda x:x%2 == 0,[1,2,3,4,5,6,7,8,9,10])))
 # print(product)
+
+
+# -----------------------------------------------------------------------------------
+# zip()
+# that was marge a two set in 2 pair 
+# in this which set have min value that number of pair create
+# a=[1,2,3,4,5,6,7,8,9,0]
+# b=['a','b','c','d','e','g','h','i','j']
+# print(list(zip(a,b)))
+
+
+# -------------------------------------------------------------------------------------------
+# max()
+# print(max(1,2,3.0,4))
+
+
+
+# -------------------------------------------------------------------------------------------
+# min()
+
+
+
+# -------------------------------------------------------------------------------------------
+# operator
+# python has perdefined funtion for many mathemathical logical relational
+# add,sub,mul,truediv,floordiv,xor,or_,and_,not_,gt,ge,lt,le,ne,
+
+
+
+
+print('\n\n')
