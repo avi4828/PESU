@@ -2,25 +2,25 @@
 #include <stdlib.h>
 
 typedef struct node {
-    int ticket_no;
+    int t_no;
     struct node *next, *prev;
 } *NODE;
 
 // Function to create a new node
-NODE create_node(int ticket_no) {
+NODE create_node(int t_no) {
     NODE new_node = (NODE)malloc(sizeof(struct node));
     if (new_node == NULL) {
         printf("\nMemory allocation failed!\n");
         return NULL;
     }
-    new_node->ticket_no = ticket_no;
+    new_node->t_no = t_no;
     new_node->next = new_node->prev = new_node; // Circular
     return new_node;
 }
 
 // Insert at front
-NODE insert_front(NODE head, int ticket_no) {
-    NODE new_node = create_node(ticket_no);
+NODE insert_front(NODE head, int t_no) {
+    NODE new_node = create_node(t_no);
     if (head == NULL)
         return new_node;
 
@@ -35,8 +35,8 @@ NODE insert_front(NODE head, int ticket_no) {
 }
 
 // Insert at rear
-NODE insert_rear(NODE head, int ticket_no) {
-    NODE new_node = create_node(ticket_no);
+NODE insert_rear(NODE head, int t_no) {
+    NODE new_node = create_node(t_no);
     if (head == NULL)
         return new_node;
 
@@ -53,14 +53,14 @@ NODE insert_rear(NODE head, int ticket_no) {
 // Delete from front
 NODE delete_front(NODE head) {
     if (head == NULL) {
-        printf("\nQueue is empty!\n");
+        printf("\nlinklist is empty!\n");
         return NULL;
     }
 
     NODE tail = head->prev;
 
     if (head->next == head) { // Only one node
-        printf("Removed ticket: %d\n", head->ticket_no);
+        printf("deleted ticket: %d\n", head->t_no);
         free(head);
         return NULL;
     }
@@ -70,7 +70,7 @@ NODE delete_front(NODE head) {
     head->prev = tail;
     tail->next = head;
 
-    printf("Removed ticket: %d\n", temp->ticket_no);
+    printf("deleted ticket: %d\n", temp->t_no);
     free(temp);
     return head;
 }
@@ -78,14 +78,14 @@ NODE delete_front(NODE head) {
 // Delete from rear
 NODE delete_rear(NODE head) {
     if (head == NULL) {
-        printf("\nQueue is empty!\n");
+        printf("\nlinklist is empty!\n");
         return NULL;
     }
 
     NODE tail = head->prev;
 
     if (head->next == head) { // Only one node
-        printf("Removed ticket: %d\n", head->ticket_no);
+        printf("deleted ticket: %d\n", head->t_no);
         free(head);
         return NULL;
     }
@@ -94,7 +94,7 @@ NODE delete_rear(NODE head) {
     new_tail->next = head;
     head->prev = new_tail;
 
-    printf("Removed ticket: %d\n", tail->ticket_no);
+    printf("deleted ticket: %d\n", tail->t_no);
     free(tail);
     return head;
 }
@@ -102,72 +102,70 @@ NODE delete_rear(NODE head) {
 // Display in forward direction
 void display_forward(NODE head) {
     if (head == NULL) {
-        printf("\nQueue is empty!\n");
+        printf("\nlinklist is empty!\n");
         return;
     }
 
     NODE temp = head;
-    printf("\nQueue: ");
+    printf("\nlinklist: ");
     do {
-        printf("[%d] -> ", temp->ticket_no);
+        printf("[%d] -> ", temp->t_no);
         temp = temp->next;
     } while (temp != head);
-    printf("\n");
 }
 
 // Display in reverse direction
 void display_reverse(NODE head) {
     if (head == NULL) {
-        printf("\nQueue is empty!\n");
+        printf("\nlinklist is empty!\n");
         return;
     }
 
     NODE tail = head->prev;
     NODE temp = tail;
 
-    printf("\nQueue: ");
+    printf("\nlinklist: ");
     do {
-        printf("[%d] -> ", temp->ticket_no);
+        printf("[%d] -> ", temp->t_no);
         temp = temp->prev;
     } while (temp != tail);
-    printf("\n");
 }
 
 // Extra Feature: Search for a ticket number
-void search_ticket(NODE head, int ticket_no) {
+void search_ticket(NODE head, int t_no) {
     if (head == NULL) {
-        printf("\nQueue is empty!\n");
+        printf("\nlinklist is empty!\n");
         return;
     }
 
     NODE temp = head;
     int pos = 1;
     do {
-        if (temp->ticket_no == ticket_no) {
-            printf("\nTicket %d found at position %d in queue.\n", ticket_no, pos);
+        if (temp->t_no == t_no) {
+            printf("\nTicket %d found at position %d in linklist.\n", t_no, pos);
             return;
         }
         temp = temp->next;
         pos++;
     } while (temp != head);
 
-    printf("\nTicket %d not found in the queue.\n", ticket_no);
+    printf("\nTicket %d not found in the linklist.\n", t_no);
 }
 
 // Main function
 int main() {
     NODE head = NULL;
-    int choice, ticket_no;
+    int choice, t_no;
 
     while (1) {
-        printf("\n--- Ticket Counter Queue System (CDLL) ---");
-        printf("\n1. Add Person at Front");
-        printf("\n2. Add Person at Rear");
-        printf("\n3. Remove Person from Front");
-        printf("\n4. Remove Person from Rear");
+        printf("\n--- Ticket Counter linklist ---");
+        printf("\n1. Add ticket at Front");
+        printf("\n2. Add ticket at Rear");
+        printf("\n3. delete ticket from Front");
+        printf("\n4. delete ticket from Rear");
         printf("\n5. Display Forward");
         printf("\n6. Display Reverse");
-        printf("\n7. Search for Ticket");
+        printf("\n7. Search for ticket");
         printf("\n0. Exit");
         printf("\nEnter your choice: ");
         scanf("%d", &choice);
@@ -175,14 +173,14 @@ int main() {
         switch (choice) {
             case 1:
                 printf("Enter ticket number: ");
-                scanf("%d", &ticket_no);
-                head = insert_front(head, ticket_no);
+                scanf("%d", &t_no);
+                head = insert_front(head, t_no);
                 break;
 
             case 2:
                 printf("Enter ticket number: ");
-                scanf("%d", &ticket_no);
-                head = insert_rear(head, ticket_no);
+                scanf("%d", &t_no);
+                head = insert_rear(head, t_no);
                 break;
 
             case 3:
@@ -203,12 +201,12 @@ int main() {
 
             case 7:
                 printf("Enter ticket number to search: ");
-                scanf("%d", &ticket_no);
-                search_ticket(head, ticket_no);
+                scanf("%d", &t_no);
+                search_ticket(head, t_no);
                 break;
 
             case 0:
-                printf("\nExiting system...\n");
+                printf("\nExiting...\n");
                 exit(0);
 
             default:

@@ -68,7 +68,7 @@ o=od([('a',1),('b',2),('c',3),('d',4)])
 
 
 #this a given a index values
-# o .move_to_end('b')
+# o.move_to_end('b')
 # print(o)
 
 

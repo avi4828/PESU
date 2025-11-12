@@ -134,6 +134,7 @@ NODE insert_sorted(NODE head, int data) {
 
     new_node->link = curr->link;
     curr->link = new_node;
+    printf("%d",(new_node->link)->data);
     return head;
 }
 
