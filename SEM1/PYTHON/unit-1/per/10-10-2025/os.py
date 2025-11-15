@@ -108,10 +108,10 @@ import os
 
 
 #give a dir information
-# p=os.popen('dir')
-# o=p.read()
-# print(f'process output \n {o}')
-# p.close()
+p=os.popen("dir D:\\PESU\\PESU\\SEM1\\PYTHON\\unit-1\\PRE > file.txt")
+o=p.read()
+print(o)
+p.close()
 
 
 
