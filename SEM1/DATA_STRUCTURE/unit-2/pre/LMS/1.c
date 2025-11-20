@@ -130,6 +130,14 @@ NODE delete_last(NODE head) {
     temp->perv->next = NULL;
     free(temp);
     return head;
+    // temp = head;
+    // while(temp->next->next != NULL){
+    //     temp = temp->next;
+    // }
+    // printf("Deleted node: %d\n", temp->next->data);
+    // free(temp->next);
+    // temp->next = NULL;
+    // return head;
 }
 
 NODE reverse_list(NODE head) {
