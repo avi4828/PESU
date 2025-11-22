@@ -63,9 +63,9 @@ print('\n\n')
 # l=[a for row in matrix for a in row if a%2!=0]
 # print(l)
 
-# matrix = [[1,2,3],[4,5,6],[7,8,9]]
-# l=[[a*2 if a%2 == 0 else a for a in row]for row in matrix]
-# print(l)
+matrix = [[1,2,3],[4,5,6],[7,8,9]]
+l=[[a*2 if a%2 == 0 else a for a in row]for row in matrix]
+print(l)
 
 # ================
 # set
