@@ -16,7 +16,7 @@ print("\n\n")
 
 # str='PYTHON CLASS'
 # s_iter=iter(str)
-# print(type(s_iter))
+# print(type(s_iter)) #iter(next)
 # print(s_iter.__next__())
 # print(s_iter.__next__())
 # print(s_iter.__next__())
@@ -35,7 +35,8 @@ n=[i for i in range(10**5)]
 # print(type(n),n)
 
 n_iter = iter(n)
-print(n_iter.__next__())
+# print(n_iter.__next__())
+print(next(n_iter3))
 # print(next(n_iter))
 
 
