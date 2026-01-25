@@ -1,0 +1,37 @@
+[
+    {
+        "Name":"jean Grey",
+        "Age":25,
+        "City":"New York"
+    },
+    {
+        "Name":"killmonger",
+        "Age":30,
+        "City":"london"
+    },
+    {
+        "Name":"logan",
+        "Age":20,
+        "City":"paris"
+    },
+    {
+        "Name":"jean Grey",
+        "Age":25,
+        "City":"New York"
+    },
+    {
+        "Name":"killmonger",
+        "Age":30,
+        "City":"london"
+    },
+    {
+        "Name":"jean Grey",
+        "Age":25,
+        "City":"New York"
+    },
+    {
+        "Name":"killmonger",
+        "Age":30,
+        "City":"london"
+    }
+]

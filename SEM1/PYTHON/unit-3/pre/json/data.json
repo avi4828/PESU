@@ -1,0 +1,17 @@
+{
+    "harry":
+    {
+        "age":13,
+        "perfoession":["Auror","Headmaster"]
+    },
+    "severus":
+    {
+        "age":38,
+        "perfoession":["Professor","Death Eater"]
+    },
+    "hermione":
+    {
+        "age":14,
+        "perfoession":["Minister","Witch"]
+    }
+}

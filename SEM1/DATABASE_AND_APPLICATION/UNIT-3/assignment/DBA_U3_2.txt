@@ -1,0 +1,49 @@
+A civil aviation authority maintains a database to manage aircrafts, pilots, and flight operations.
+Collections and fields.
+1. aircrafts
+aircraftId (String)
+model (String)
+manufacturer (String)
+capacity (Number)
+status (String) — Active / Maintenance
+
+2. pilots
+pilotId (String)
+name (String)
+licenseNo (String)
+experienceYears (Number)
+assignedAircraft (String)
+
+3. flights
+flightCode (String)
+source (String)
+destination (String)
+departureTime (String)
+aircraftId (String)
+pilotId (String)
+
+1. Insert a new aircraft with ID A320, model A320neo, manufacturer Airbus, capacity 180, and status Active.
+
+2. Insert two pilot records with different experience levels and assigned aircrafts.
+
+3. Add three flight records operating between different cities.
+
+4.Display all aircraft records available in the database.
+
+5. Retrieve all pilots who have more than 5 years of flying experience.
+
+6. Find all flights departing from Bangalore.
+
+7.Display details of an aircraft whose status is Maintenance.
+
+8. Update the status of aircraft A320 to Maintenance.
+
+9.Change the assigned aircraft of a pilot using their pilotId.
+
+10. Modify the departure time of a specific flight.
+
+11. Delete a pilot record using pilotId.
+
+12. Remove all flights whose destination is Chennai.
+
+13. Delete an aircraft record that is no longer in service.

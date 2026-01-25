@@ -1,0 +1,270 @@
+[{
+  "_id": {
+    "$oid": "693b98653340756f8d1e2621"
+  },
+  "productid": "M101",
+  "productName": "Wireless Mouse",
+  "price": 450,
+  "inStock": true
+},
+{
+  "_id": {
+    "$oid": "693b98653340756f8d1e2622"
+  },
+  "productid": "M102",
+  "productName": "Keyboard",
+  "price": 620,
+  "inStock": false
+},
+{
+  "_id": {
+    "$oid": "693b98653340756f8d1e2623"
+  },
+  "productid": "M103",
+  "productName": "USB-C Cable",
+  "price": 150,
+  "inStock": true
+},
+{
+  "_id": {
+    "$oid": "693b98653340756f8d1e2624"
+  },
+  "productid": "M104",
+  "productName": "Bluetooth Speaker",
+  "price": 980,
+  "inStock": true
+},
+{
+  "_id": {
+    "$oid": "693b98653340756f8d1e2625"
+  },
+  "productid": "M105",
+  "productName": "Laptop Stand",
+  "price": 850,
+  "inStock": false
+},
+{
+  "_id": {
+    "$oid": "693b98653340756f8d1e2626"
+  },
+  "productid": "M106",
+  "productName": "Phone Charger",
+  "price": 300,
+  "inStock": true
+},
+{
+  "_id": {
+    "$oid": "693b98653340756f8d1e2627"
+  },
+  "productid": "M107",
+  "productName": "Earphones",
+  "price": 250,
+  "inStock": true
+},
+{
+  "_id": {
+    "$oid": "693b98653340756f8d1e2628"
+  },
+  "productid": "M108",
+  "productName": "Webcam",
+  "price": 720,
+  "inStock": false
+},
+{
+  "_id": {
+    "$oid": "693b98653340756f8d1e2629"
+  },
+  "productid": "M109",
+  "productName": "Power Bank",
+  "price": 900,
+  "inStock": true
+},
+{
+  "_id": {
+    "$oid": "693b98653340756f8d1e262a"
+  },
+  "productid": "M110",
+  "productName": "LED Desk Lamp",
+  "price": 675,
+  "inStock": true
+},
+{
+  "_id": {
+    "$oid": "693b98653340756f8d1e262b"
+  },
+  "productid": "M111",
+  "productName": "Portable SSD",
+  "price": 1000,
+  "inStock": true
+},
+{
+  "_id": {
+    "$oid": "693b98653340756f8d1e262c"
+  },
+  "productid": "M112",
+  "productName": "Graphics Tablet",
+  "price": 950,
+  "inStock": false
+},
+{
+  "_id": {
+    "$oid": "693b98653340756f8d1e262d"
+  },
+  "productid": "M113",
+  "productName": "HDMI Cable",
+  "price": 180,
+  "inStock": true
+},
+{
+  "_id": {
+    "$oid": "693b98653340756f8d1e262e"
+  },
+  "productid": "M114",
+  "productName": "WiFi Router",
+  "price": 780,
+  "inStock": true
+},
+{
+  "_id": {
+    "$oid": "693b98653340756f8d1e262f"
+  },
+  "productid": "M115",
+  "productName": "Smartwatch Strap",
+  "price": 220,
+  "inStock": true
+},
+{
+  "_id": {
+    "$oid": "693b98653340756f8d1e2630"
+  },
+  "productid": "M116",
+  "productName": "Portable Fan",
+  "price": 350,
+  "inStock": false
+},
+{
+  "_id": {
+    "$oid": "693b98653340756f8d1e2631"
+  },
+  "productid": "M117",
+  "productName": "Laptop Sleeve",
+  "price": 480,
+  "inStock": true
+},
+{
+  "_id": {
+    "$oid": "693b98653340756f8d1e2632"
+  },
+  "productid": "M118",
+  "productName": "Memory Card 32GB",
+  "price": 650,
+  "inStock": true
+},
+{
+  "_id": {
+    "$oid": "693b98653340756f8d1e2633"
+  },
+  "productid": "M119",
+  "productName": "Gaming Mouse Pad",
+  "price": 300,
+  "inStock": true
+},
+{
+  "_id": {
+    "$oid": "693b98653340756f8d1e2634"
+  },
+  "productid": "M120",
+  "productName": "Mobile Holder",
+  "price": 140,
+  "inStock": false
+},
+{
+  "_id": {
+    "$oid": "693b98653340756f8d1e2635"
+  },
+  "productid": "M121",
+  "productName": "Electric Kettle",
+  "price": 960,
+  "inStock": true
+},
+{
+  "_id": {
+    "$oid": "693b98653340756f8d1e2636"
+  },
+  "productid": "M122",
+  "productName": "Hair Dryer",
+  "price": 550,
+  "inStock": true
+},
+{
+  "_id": {
+    "$oid": "693b98653340756f8d1e2637"
+  },
+  "productid": "M123",
+  "productName": "Toaster",
+  "price": 700,
+  "inStock": false
+},
+{
+  "_id": {
+    "$oid": "693b98653340756f8d1e2638"
+  },
+  "productid": "M124",
+  "productName": "Water Bottle Steel",
+  "price": 260,
+  "inStock": true
+},
+{
+  "_id": {
+    "$oid": "693b98653340756f8d1e2639"
+  },
+  "productid": "M125",
+  "productName": "Smart LED Bulb",
+  "price": 320,
+  "inStock": true
+},
+{
+  "_id": {
+    "$oid": "693b98653340756f8d1e263a"
+  },
+  "productid": "M126",
+  "productName": "Portable Blender",
+  "price": 875,
+  "inStock": false
+},
+{
+  "_id": {
+    "$oid": "693b98653340756f8d1e263b"
+  },
+  "productid": "M127",
+  "productName": "Travel Adapter",
+  "price": 430,
+  "inStock": true
+},
+{
+  "_id": {
+    "$oid": "693b98653340756f8d1e263c"
+  },
+  "productid": "M128",
+  "productName": "USB Hub 4 Port",
+  "price": 520,
+  "inStock": true
+},
+{
+  "_id": {
+    "$oid": "693b98653340756f8d1e263d"
+  },
+  "productid": "M129",
+  "productName": "Fitness Band",
+  "price": 990,
+  "inStock": false
+},
+{
+  "_id": {
+    "$oid": "693b98653340756f8d1e263e"
+  },
+  "productid": "M130",
+  "productName": "Portable Tripod",
+  "price": 410,
+  "inStock": true
+}]

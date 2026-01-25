@@ -1,0 +1,4 @@
+This is a file that is used for reading.
+The file contains all information that needs to be read.
+It contains lines of information to be read.
+The file has to have a name, size and other details.

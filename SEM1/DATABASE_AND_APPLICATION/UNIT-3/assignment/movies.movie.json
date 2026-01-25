@@ -1,0 +1,67 @@
+[{
+  "_id": {
+    "$oid": "693b8d0d03d0e3644c1e2621"
+  },
+  "movieId": "m101",
+  "title": "abc",
+  "year": 2000,
+  "genrn": [
+    "horror",
+    "sci-fi"
+  ],
+  "drictor": "a",
+  "cast": [
+    "a",
+    "b",
+    "c"
+  ],
+  "imdb": {
+    "ratting": 9,
+    "votes": 10
+  }
+},
+{
+  "_id": {
+    "$oid": "693b8f3203d0e3644c1e262c"
+  },
+  "movieId": "m102",
+  "title": "bcd",
+  "year": 2005,
+  "genrn": [
+    "horror",
+    "comady"
+  ],
+  "drictor": "b",
+  "cast": [
+    "a",
+    "b",
+    "c"
+  ],
+  "imdb": {
+    "ratting": 8.5,
+    "votes": 100
+  }
+},
+{
+  "_id": {
+    "$oid": "693b8f3203d0e3644c1e262d"
+  },
+  "moviedId": "m103",
+  "title": "cde",
+  "year": 2020,
+  "genrn": [
+    "sci-fi",
+    "sed"
+  ],
+  "drictor": "c",
+  "cast": [
+    "q",
+    "w",
+    "e",
+    "r"
+  ],
+  "imdb": {
+    "ratting": 6.5,
+    "votes": 500
+  }
+}]

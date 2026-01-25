@@ -1,0 +1,11 @@
+OrderID,ProductID,Qty,Amount,Region,Customer,City,Date
+1001,P101,2,24000,south,Rahul,Bengaluru,2024-01-12
+1002,P103,1,1500,west,Arjun,Mumbai,2024-01-13
+1003,P102,3,45000,north,Shreya,Delhi,2024-01-14
+1004,P104,1,1200,east,Meera,Kolkata,2024-01-15
+1005,P105,1,55000,south,Anand,Chennai,2024-01-15
+1006,P101,1,12000,west,Anita,Pune,2024-01-16
+1007,P106,2,1500,east,Karthik,Bhubaneswar,2024-01-16
+1008,P107,1,12800,south,Dev,Hyderabad,2024-01-17
+1009,P108,3,3200,west,Vikram,Ahmedabad,2024-01-17
+1010,P102,1,45000,north,Rohan,New Delhi,2024-01-18

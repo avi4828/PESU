@@ -1,0 +1,2 @@
+ConsumerID,Name,PreviousReading,CurrentReading,ErrorReason
+C02,Suresh,800,750,NegativeUnits

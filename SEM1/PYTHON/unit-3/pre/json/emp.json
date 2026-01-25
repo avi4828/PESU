@@ -1,0 +1,27 @@
+{
+    "aaa":{
+        "age":20,
+        "dept":"HR",
+        "salary":50000
+    },
+    "bbb":{
+        "age":25,
+        "dept":"HR",
+        "salary":60000
+    },
+    "ccc":{
+        "age":30,
+        "dept":"HR",
+        "salary":70000
+    },
+    "ddd":{
+        "age":35,
+        "dept":"WEB",
+        "salary":80000
+    },
+    "eee":{
+        "age":40,
+        "dept":"WEB",
+        "salary":90000
+    }
+}

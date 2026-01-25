@@ -1,0 +1,2 @@
+ReturnID,OrderID,Reason,Amount,RefundMode
+R01,O01,Damaged,500,UPI
