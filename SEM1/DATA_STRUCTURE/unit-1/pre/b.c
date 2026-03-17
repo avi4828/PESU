@@ -14,7 +14,7 @@ NODE create_node(int data) {
         return NULL;
     }
     temp->data = data;
-    temp->link = NULL;
+    temp->link = NULL;/
     return temp;
 }
 
